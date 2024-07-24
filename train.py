@@ -4,6 +4,6 @@ class train:
         self.date = date
     def valid(self):
         if self.do == "AB" or self.do == "BA" or self.do == "BC" or self.do == "CB" or self.do == "DC" or self.do == "CD" :
-            return True
+            return self 
         else :
-            return False
+            return None
