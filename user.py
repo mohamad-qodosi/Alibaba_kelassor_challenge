@@ -6,7 +6,7 @@ class User:
         self.flight_tickets = []
     def add_train_ticket(self, train : Train): # type: ignore
         self.train_tikets.append(train)
-    def add_flight_ticket(self, flight: Flight): # type: ignore
+    def add_flight_ticket(self, flight : Flight): # type: ignore
         self.flight_tickets.append(flight)
     def get_train_tickets(self):
         return self.train_tikets
