@@ -1,9 +1,9 @@
 class Train:
-    def __init__(self,do,date):
+    def __init__(self, do:str, date:int):
         self.do  = do 
         self.date = date
     def valid(self):
-        if self.do == "AB" or self.do == "BA" or self.do == "BC" or self.do == "CB" or self.do == "DC" or self.do == "CD" :
+        if self.do in ["AB","BA","BC","CB","DC","CD"]:
             return self 
         else :
             return None
