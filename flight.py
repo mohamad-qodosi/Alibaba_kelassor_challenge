@@ -4,18 +4,15 @@ class flight:
         self.date = date    
     def valid(self) -> None:
         if self.do == "AB" and self.date % 4 == 1 :
-            return True 
+            return self  
         elif self.do == "BC" and self.date % 4 == 2 :
-            return True 
+            return self  
         elif self.do == "CD" and self.date % 4 == 3 :
-            return True 
+            return self  
         elif self.do == "DA" and self.date % 4  == 0 :
-            return True 
+            return self 
         else :
-            return False
-    def re_ticket(self):
-        if self.valid() :
-            return self
+            return None 
     
 
          
