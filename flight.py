@@ -1,6 +1,7 @@
 class flight:
     def __init__(self, do:str , date:int) -> None:
-        self.do = do    
+        self.do = do 
+        self.date = date    
     def valid(self) -> None:
         if self.do == "AB" and self.date % 4 == 1 :
             return True 
@@ -12,5 +13,10 @@ class flight:
             return True 
         else :
             return False
+    def re_ticket(self):
+        if self.valid() :
+            return self
+    
+
          
     
