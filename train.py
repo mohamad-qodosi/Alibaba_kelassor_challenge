@@ -1,4 +1,4 @@
-class train:
+class Train:
     def __init__(self,do,date):
         self.do  = do 
         self.date = date
