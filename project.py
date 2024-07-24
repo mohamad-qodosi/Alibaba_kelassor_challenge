@@ -83,11 +83,21 @@ while True:
                     if type(Flight(route,date).valid()) == Flight:
                         print("succes")
                     
+                    for user in users_list:
+                        user : User
+                        if user.username == user_name:
+                            user.add_flight_ticket(Flight(route,date).valid())
+                           
+                    
                     else:
                         reserve(vehcile)
                 elif vehcile == "train":
                     if type(Train(route,date).valid()) == Train:
                         print("succes")
+                        for user in users_list:
+                            user : User
+                            if user.username == user_name:
+                                user.add_train_ticket(Flight(route,date).valid())
                     else:
                         reserve(vehcile)
                 else:
@@ -116,7 +126,7 @@ while True:
                 user : User
                 if user.username == user_name:
                     user_train_ticekts = user.get_train_tickets()
-                    user_train_flight = user.get_flight_tickets()
+                    user_train_flight = user.get_train_flight()
                     print(user_train_ticekts)
                     print(user_train_flight)
 
