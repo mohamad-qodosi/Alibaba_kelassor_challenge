@@ -1,4 +1,4 @@
-class flight:
+class Flight:
     def __init__(self, do:str , date:int) -> None:
         self.do = do 
         self.date = date    
